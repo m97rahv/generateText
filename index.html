@@ -1,0 +1,21 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="./jspdf.min.js"></script>
+	<script type="text/javascript">
+		function genPDF(){
+			var doc = new jsPDF();
+			
+			doc.text(20,20,'Hello World');
+			doc.addPage();
+			doc.text(20,20,'Hello wordl2');
+			doc.save('Test.pdf');
+		
+		}
+	
+	</script>
+</head>
+<body>
+	<a href="javascript:genPDF()">Download</a>
+</body>
+</html>
